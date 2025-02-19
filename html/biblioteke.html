@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./inex.css">
+    <title>Игровая библиотека</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        h1 {
+            color: #f39c12;
+        }
+        input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .game {
+            background: #1e1e1e;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .game:hover {
+            transform: scale(1.05);
+        }
+        .download-btn {
+            background-color: #f39c12;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .download-btn:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="./inex.html">Безопасность</a></li>
+          <li><a href="#about">О Нас</a></li>
+          <li><a href="./biblioteke.html">Библиотека</a></li>
+        </ul>
+      </nav>
+
+    <div class="container">
+        <h1>Игровая библиотека</h1>
+        <input type="text" id="search" placeholder="Поиск игр..." onkeyup="filterGames()">
+        <div id="game-list">
+            <div class="game">Cyberpunk 2077 <a class="download-btn" href="./Cyberpunk-2077-by-Igruha.torrent">Скачать</a>
+            <div class="game">Elden Ring <a class="download-btn" href="./Elden-Ring-by-Igruha.torrent">Скачать</a></div>
+            <div class="game">Gta 5 <a class="download-btn" href="./Grand-Theft-Auto-V-by-Igruha (1).torrent">Скачать</a></div>
+            <div class="game">Ghost Of Tsushima <a class="download-btn" href="./Ghost-of-Tsushima-DIRECTORS-CUT-by-Igruha (1).torrent">Скачать</a></div>
+            <div class="game">Call of Duty warfare 2 <a class="download-btn" href="./Call_Of_Duty_Modern_Warfare_2_Campaign_Remastered_by_Igruha.torrent">Скачать</a></div>
+            <div class="game">Marvel's Spider Man <a class="download-btn" href="./Marvels-Spider-Man-Remastered-by-Igruha.torrent">Скачать</a></div>
+            <div class="game">Marvel's Spider Man Miles Morales <a class="download-btn" href="./Marvels-Spider-Man-Miles-Morales-by-Igruha.torrent">Скачать</a></div>
+            <div class="game">Forza Horizon 5 <a class="download-btn" href="./Forza Horizon 5 Premium Edition by Igruha.torrent">Скачать</a></div>
+            <div class="game">The las of Us 1 <a class="download-btn" href="./The-Last-of-Us-Part-I-by-Igruha.torrent">Скачать</a></div>
+            <div class="game">Rdr 2 <a class="download-btn" href="./Red-Dead-Redemption-2-by-Igruha.torrent">Скачать</a></div>
+            <div class="game">God Of war ragnorok <a class="download-btn" href="./God-of-War-Ragnarok-by-Igruha.torrent">Скачать</a></div>
+            <div class="game">God of war 4 <a class="download-btn" href="./God-of-War-by-Igruha.torrent">Скачать</a></div>
+            <div class="game">Titan fall 2 <a class="download-btn" href="./Titanfall-2-by-Igruha.torrent">Скачать</a></div>
+            <div class="game">Ucnharted 4 <a class="download-btn" href="./UNCHARTED-Legacy-of-Thieves-Collection-by-Igruha.torrent">Скачать</a></div>
+            <div class="game">Atomic Heart <a class="download-btn" href="./Atomic-Heart-by-Igruha.torrent">Скачать</a></div>
+            <div class="game">Rise of the Tomb Raider <a class="download-btn" href="./Rise-of-the-Tomb-Raider-by-Igruha.torrent">Скачать</a></div>
+        </div>
+    </div>
+    <script>
+        function filterGames() {
+            let input = document.getElementById('search').value.toLowerCase();
+            let games = document.querySelectorAll('.game');
+            games.forEach(game => {
+                let text = game.textContent.toLowerCase();
+                game.style.display = text.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+
+<footer>
+    <p>&copy; 2024 Мой Сайт. Все права защищены. | <a href="./inex.html">Политика конфиденциальности</a></p>
+</footer>>
+</body>
+</html>

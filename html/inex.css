@@ -1,0 +1,140 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: white;
+    text-align: center;
+}
+
+
+h1, h2, h3, p {
+    text-shadow: 0 0 5px #4200f8, 0 0 10px #ff0000, 0 0 20px #00FFEA;
+}
+
+
+.menu {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #0ff;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
+
+/* Главный блок */
+.hero {
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero button {
+    padding: 12px 24px;
+    background: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #007BFF;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #ff00ff;
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+/* Секции */
+.section {
+    padding: 50px 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Карточки */
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px #00FFEA;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px #ff00ff;
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: #00FFEA;
+}
+
+.card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
+
+/* Подвал */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+footer a {
+    color: #00FFEA;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
